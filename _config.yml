@@ -19,7 +19,8 @@ picture: assets/images/icon_big.png
 baseurl: ''
 url: https://pie001.github.io
 
-permalink: blog/:categories/:title/
+#permalink: blog/:categories/:title/
+permalink: :categories/:title/
 
 markdown:  kramdown
 highlighter:  rouge
