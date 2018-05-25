@@ -1,5 +1,7 @@
 # C#：EPPLUS에서 함수설정 변경&값 검색
 
+*Read this in other languages: [한국어](csharp-epplus-sample.md), [日本語](csharp-epplus-sample.ja.md)
+
 ```cs
 using System;
 using System.Collections.Generic;
