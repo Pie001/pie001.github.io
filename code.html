@@ -3,30 +3,6 @@ layout: page
 title: code
 ---
 <section class="list">
-	{% if site.posts.size == 0 %}
-		<p class="text-center">Nothing published yet!</p>
-	{% elsif site.paginate %}
-		{% for post in paginator.posts %}
-            {% if post.code %}
-	            {% include blog-post.html %}
-            {% endif %}
-	    {% endfor %}
-
-		{% if site.paginate %}
-			{% include pagination.html%}
-		{% endif %}
-	{% else %}
-		{% for post in site.posts %}
-            {% if post.code %}
-			    {% include blog-post.html %}
-            {% endif %}
-		{% endfor %}
-	{% endif %}
-</section>
-
-
-
-<!--<section class="list">
     {% for post in site.posts %}
         {% if post.code %}
             <div class="item {% if post.star %}star{% endif %}">
@@ -37,4 +13,4 @@ title: code
             </div>
         {% endif %}
     {% endfor %}
-</section>-->
+</section>
