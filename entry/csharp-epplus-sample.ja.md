@@ -1,5 +1,7 @@
 # C#：EPPLUSで関数設定変更＆値検索
 
+*Read this in other languages: [한국어](csharp-epplus-sample.md), [日本語](csharp-epplus-sample.ja.md)
+
 ```cs
 using System;
 using System.Collections.Generic;
