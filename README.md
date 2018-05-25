@@ -1,3 +1,3 @@
-# pie001.github.io
+# pie's GitHub Page
 
 I create my GitHub Page!
