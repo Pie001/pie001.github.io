@@ -2,7 +2,7 @@ body, html
 	font-size: 62.5%
 
 body
-	line-height: 1
+	line-height: 1.2
 	font: 16px $fontSans
 	color: $alpha
 
@@ -11,6 +11,7 @@ h1, h2, h3, h4
 	color: $beta
 	-webkit-font-smoothing: antialiased
 	text-rendering: optimizeLegibility
+
 
 h1
 	font-size: 3rem
@@ -29,14 +30,17 @@ h4
 
 a
 	color: $delta
-	text-decoration: underline
+	// text-decoration: underline
+	text-decoration: none
+	font-weight: 400
 
 p
-	line-height: 1.7
+	line-height: 1.9
 	color: $alpha
 	font-weight: 300
 	margin-bottom: 20px
-	letter-spacing: 0.4px
+	padding-bottom: 5px
+	letter-spacing: 0.3px
 
 	@media #{$mobile}
 		letter-spacing: 0.2px
@@ -51,6 +55,7 @@ ol
 		line-height: 2.4rem
 		font-weight: 300
 		color: $alpha
+		margin-bottom: 0px
 
 img,
 pre,
@@ -60,6 +65,9 @@ iframe
 img,
 pre
 	border-radius: 4px
+	display: block
+	margin: 0 auto
+
 
 figcaption
 	position: relative
@@ -93,13 +101,14 @@ figure.highlight
 
 code,
 tt
-	padding: 1px 0
+	padding: 3px 5px
 	font-family: $fontMonospace
-	font-size: 12px
+	font-size: 13px
 	line-height: 20px
-	background: #fff
-	border-radius: 2px
-	border-radius: 2px
+	background: $codebackground
+	margin: 0 5px 0 5px
+	border-radius: 5px
+	font-weight: 400
 
 pre
 	box-sizing: border-box
@@ -110,7 +119,10 @@ pre
 	font-size: 1.2rem
 	line-height: 2rem
 	overflow: auto
-	background: #fff
+	code
+		background: none
+		margin: 0 0 0 -5px
+	background: #FBF7F7
 	border: 1px solid $epsilon
 	border-radius: 2px
 

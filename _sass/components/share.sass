@@ -1,13 +1,13 @@
 .share
     float: right
-    width: 40%
+    width: 60%
     display: inline
     text-align: right
     position: relative
     top: -10px
 
     @media #{$mobile}
-        width: 100%
+        width: 25%
         display: block
         top: 0
         text-align: left
@@ -15,7 +15,7 @@
         margin-top: 5px
 
     @media #{$tablet}
-        width: 100%
+        width: 25%
         display: block
         top: 0
         text-align: left
@@ -25,16 +25,15 @@
     > .twitter,
     > .facebook,
     > .google-plus,
-    > .linkedin,
     > .reddit
         display: inline
         vertical-align: middle
-        font-size: 13px
-        font-weight: 700
+        // font-size: 10px
+        font-weight: 600
         color: #fff
-        padding: 6px 10px
+        padding: 3px 8px 5px 12px
         border-radius: 3px
-        margin-left: 5px
+        margin: 3px
         text-decoration: none
 
         @media #{$mobile}
@@ -54,6 +53,23 @@
 
     > .linkedin
         background: #0077b5
+        display: inline
+        vertical-align: middle
+        // font-size: 10px
+        font-weight: 600
+        color: #fff
+        padding: 3px 9px 5px 11px
+        border-radius: 3px
+        margin: 3px
+        text-decoration: none
+
+        @media #{$mobile}
+            margin: 0 5px 10px 0
+
+        @media #{$tablet}
+            margin: 0 5px 10px 0
+
+
 
     > .reddit
         background: #ff4500
@@ -67,5 +83,5 @@
         position: relative
         top: 3px
         margin: 0
-        margin-right: 4px
+        // margin-right: 4px
         display: inherit

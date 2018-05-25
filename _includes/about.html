@@ -1,0 +1,71 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jekyll Resume - Jaehwan Park</title>
+    <meta name="description" content="Jekyll Resume is a mega simple resume theme for Jekyll.">
+    <link href="{{ site.resume_css_url }}/main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+    <body>
+        <header>
+    <div class="container">
+        <div class="intro">
+          {% for hellos in site.data.hello %}
+            <p class="intro__pre">{{ hellos.greetings }}</p>
+            <p class="intro__main">{{ hellos.introduce }}</p>
+            <p class="intro__post">{{ hellos.location }}</p>
+          {% endfor %}
+        </div>
+
+
+        <div class="social">
+            <a href="http://github.com/jaehwant" target="_blank">GitHub</a>
+            <a href="http://codepen.io/mattcouchman" target="_blank">CodePen</a>
+            <a href="http://twitter.com/mattcouchman" target="_blank">Twitter</a>
+            <a href="mailto:some@email.com" target="_blank">Email</a>
+        </div>
+
+
+    </div>
+</header>
+
+    <div class="container">
+      <h3 class="section-title">Experience</h3>
+      <dl class="experience">
+          {% for job in site.data.jobs %}
+              <dt>
+                  <p class="title">{{ job.title }}</p>
+                  <p class="company">{{ job.company }}</p>
+                  <p class="period">{{ job.period }}</p>
+              </dt><!--
+              --><dd>
+                  <p>{{ job.description }}</p>
+              </dd>
+          {% endfor %}
+      </dl>
+
+      <h3 class="section-title">Education</h3>
+      <dl class="education">
+          {% for qualification in site.data.education %}
+              <dt>
+                  <p class="title">{{ qualification.qualification }}</p>
+                  <p class="company">{{ qualification.school }}</p>
+                  <p class="period">{{ qualification.period }}</p>
+              </dt><!--
+              --><dd>
+                  <p>{{ qualification.description }}</p>asd
+              </dd>
+          {% endfor %}
+      </dl>
+    </div>
+
+    <footer class="footer">
+    <p class="footer__title">Jaehwan Park</p>
+    <p class="footer__subtitle">Software engineer</p>
+</footer>
+
+    </body>
+</html>

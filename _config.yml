@@ -1,5 +1,5 @@
 # main text of home
-name: Pie
+name: "Pie"
 bio: Hello World!
 
 # twitter summary info
@@ -12,13 +12,17 @@ picture: assets/images/icon_big.png
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
-resume: true
-resume-external: true
-resume-url: https://google.com/?q=my+resume
+#resume: true
+#resume-external: true
+#resume-url: https://google.com/?q=my+resume
 
+baseurl: ''
 url: https://pie001.github.io
 
-permalink: /:title/
+permalink: blog/:categories/:title/
+
+markdown:  kramdown
+highlighter:  rouge
 
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'
@@ -28,20 +32,22 @@ permalink: /:title/
 # analytics-piwik-id: 1
 
 # if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+#disqus:
+#  shortname: mydisqus # enter this from your disqus account
+#  categories: [blog, project] # only show disqus for posts that have these categories
+disqus:  mydisqus
 
 # if you don't have any of social below, comment the line
+linkedin: piepark
+github: pie001
 #facebook: myfacebook
 #twitter: mytwitter
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-linkedin: piepark
+
 # youtube: myyoutube
 # spotify: myspotify
-github: pie001
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
@@ -64,8 +70,8 @@ authors:
 width: normal
 
 # if you don't need pagination, comment the *paginate* configs below
-# paginate: 5
-# paginate_path: "blog/:num/"
+paginate: 10
+paginate_path: "/blog/:num/"
 
 # if you don't need projects, comment the *projects* configs below
 projects: true
@@ -93,11 +99,13 @@ show-author: true
 animation: true
 
 plugins:
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-feed
   - jemoji
-  - jekyll-admin
+  - jekyll-mentions
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
 
 jekyll-mentions:
     base_url: https://github.com
