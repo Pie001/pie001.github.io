@@ -7,15 +7,30 @@ title: Blog
 <p>blog-ja test start</p>
 
 <section class="list">
-	{% if site.posts.size == 0 %}
-		<p class="text-center">Nothing published yet!</p>
-	{% else %}
-		{% for post in site.posts %}
+    {% for post in site.posts %}
+        {% if post.blog-ja %}
+	
 			{% include blog-post.html %}
-		{% endfor %}
-	{% endif %}
+
+        {% endif %}
+    {% endfor %}
 </section>
 
+<!--
+	<section class="list">
+    {% for post in site.posts %}
+        {% if post.code %}
+            <div class="item {% if post.star %}star{% endif %}">
+                <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
+                    <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
+                    {{ post.jemoji }}<h3 class="title">{{ post.title }}</h3>
+                </a>
+            </div>
+        {% endif %}
+    {% endfor %}
+</section>
+	
+-->
 <!--<section class="list">
 	{% if site.posts.size == 0 %}
 		<p class="text-center">Nothing published yet!</p>
