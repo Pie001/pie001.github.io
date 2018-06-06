@@ -17,7 +17,7 @@ picture: assets/images/icon_big.png
 #resume-url: https://google.com/?q=my+resume
 
 baseurl: ''
-url: https://pie001.com
+url: http://pie001.com
 
 #permalink: blog/:categories/:title/
 permalink: entry/:categories/:title/
