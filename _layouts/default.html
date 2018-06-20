@@ -4,6 +4,7 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% include adsense.html %}
     {% include analytics-google.html %}
     <meta charset="UTF-8">
     <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
@@ -23,16 +24,6 @@ layout: compress
     {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
     {{ scss_sheet | scssify }}
     </style>
-
-    <!-- google ad s -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-6118488861150738",
-        enable_page_level_ads: true
-      });
-    </script>
-    <!-- google ad e -->
     
 </head>
 <body>
