@@ -27,8 +27,9 @@ layout: page
 	<li>Entity Framework</li>
 </ul>
 
-<h2>Projects</h2>
+<!--<h2>Projects</h2>
 
 <ul>
 	<li><a href="https://github.com/">작성중</a></li>
 </ul>
+-->
