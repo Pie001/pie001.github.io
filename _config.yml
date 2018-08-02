@@ -17,7 +17,7 @@ picture: assets/images/icon_big.png
 #resume-url: https://google.com/?q=my+resume
 
 baseurl: ''
-url: http://pie001.com
+url: https://pie001.github.io/
 
 #permalink: blog/:categories/:title/
 permalink: entry/:categories/:title/
@@ -111,4 +111,4 @@ plugins:
   - jekyll-paginate
 
 jekyll-mentions:
-    base_url: https://github.com
+    base_url: https://pie001.github.io/
