@@ -8,6 +8,8 @@ layout: default
 
 {{content}}
 
-
+{% if page.title != "Home" %}
+	{% include search.html %}
+{% endif %}
 
 {% include footer.html %}
