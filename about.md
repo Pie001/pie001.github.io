@@ -2,7 +2,7 @@
 title: About
 layout: page
 ---
-![Profile Image]({{ site.url }}/{{ site.picture }})
+![about](/assets/images/about.png)
 
 <p>여자&비전공&학원출신으로 10여년 전에 일본에 취업해서 지금까지 이래저래 IT일을 하면서 살고 있습니다.</p>
 
