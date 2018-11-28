@@ -1,9 +1,9 @@
 # main text of home
-name: "Pie's Tech Note in Japan"
-bio: A woman who Engineer working in Japan
+name: "Pie's Tech Note"
+bio: 개발자/여자/비전공/일본
 
 # twitter summary info
-description: A blog about technology and Japan life
+description: A blog about technology
 
 # if it's an external image, update below for true
 # better with square images
