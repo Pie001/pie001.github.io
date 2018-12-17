@@ -39,7 +39,7 @@ layout: page
 
 <ul class="languages-list">
 	<li>Korean(Native or bilingual proficiency)</li>
-	<li>Japanese<(Native or bilingual proficiency)</li>
+	<li>Japanese(Native or bilingual proficiency)</li>
 	<li>English(Limited working proficiency)</li>
 </ul>
 
