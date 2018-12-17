@@ -43,9 +43,18 @@ layout: page
 	<li>English(Limited working proficiency)</li>
 </ul>
 
-<!--<h2>Projects</h2>
+<h2>Socials</h2>
 
 <ul>
-	<li><a href="https://github.com/">작성중</a></li>
+	<li><a href="https://pie001.github.io/" target="_blank">Pie's Tech Note</a></li>
+	<li><a href="https://blog.pie001.com/" target="_blank">IT業界のすみっこ暮らし</a></li>
+	<li><a href="https://github.com/Pie001" target="_blank">My GitHub</a></li>
+	<li><a href="https://www.hackerrank.com/pie001" target="_blank">My HackerRank Profile</a></li>
+	<li><a href="https://www.linkedin.com/in/piepark/" target="_blank">My Linkedin Profile</a></li>
+</ul>
+
+<!-- <h2>Projects</h2> 
+<ul>
+<li></li>
 </ul>
 -->
