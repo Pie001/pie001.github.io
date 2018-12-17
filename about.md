@@ -25,6 +25,24 @@ layout: page
 	<li>Entity Framework</li>
 </ul>
 
+
+<h2>Certifications</h2>
+
+<ul class="certifications-list">
+	<li>Engineer Information Processing - Dec 2005</li>
+	<li>Sun Certified Programmer for the Java 2 Platform 1.4 - Jan 2006</li>
+	<li>JLPT Japanese Language Proficiency (Level1) - Feb 2008</li>
+	<li>Craftsman Computer Graphics Operation - Dec 2004</li>	
+</ul>
+
+<h2>Languages</h2>
+
+<ul class="languages-list">
+	<li>Korean(Native or bilingual proficiency)</li>
+	<li>Japanese<(Native or bilingual proficiency)/li>
+	<li>English(Limited working proficiency)</li>
+</ul>
+
 <!--<h2>Projects</h2>
 
 <ul>
