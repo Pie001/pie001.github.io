@@ -1,8 +1,7 @@
 ---
-title:Resume
-layout: resume
+layout: default
 ---
 
 <div class="container">
-    {% include about.html %}
+    {% include resume.html %}
 </div>
