@@ -21,7 +21,8 @@ layout: page
 	<li>Javascript (Design Patterns, Testes)</li>
 	<li>Git</li>
 	<li>Python</li>
-	<li>MySQL - SQL Server</li>
+	<li>MySQL</li>
+	<li>SQL Server</li>
 	<li>Entity Framework</li>
 </ul>
 
