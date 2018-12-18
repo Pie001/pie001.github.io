@@ -52,6 +52,7 @@ layout: page
 	<li><a href="https://www.linkedin.com/in/piepark/" target="_blank">Linkedin</a></li>
 	<li><a href="https://github.com/Pie001" target="_blank">GitHub</a></li>
 	<li><a href="https://www.hackerrank.com/pie001" target="_blank">HackerRank</a></li>
+	<li><a href="https://www.acmicpc.net/user/pie" target="_blank">Baekjoon OJ</a></li>
 </ul>
 
 <!-- <h2>Projects</h2> 
