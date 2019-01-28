@@ -20,8 +20,8 @@ papamau09★gmail.com (★ → @)
 	<li>Java</li>
 	<li>Responsive (Mobile First)</li>
 	<li>CSS (Stylus, Sass, Less)</li>
-	<li>Css Frameworks (Bootstrap, Foundation)</li>
-	<li>Javascript (Design Patterns, Testes)</li>
+	<li>Css Frameworks (Bootstrap)</li>
+	<li>Javascript</li>
 	<li>Git</li>
 	<li>Python</li>
 	<li>MySQL</li>
