@@ -3,7 +3,7 @@ title: About
 layout: page
 ---
 
-<img src="/assets/images/icon_big.png" width="100" height="100">
+<img src="/assets/images/icon_big.png" width="200" height="200">
 
 여자&비전공&학원출신. IT업계에서 구른지 10년↑
 
