@@ -2,7 +2,9 @@
 .blog,
 .blog-ko,
 .blog-en,
-.blog-ja,    
+.blog-ja,
+.tags,
+.categories,
 .projects
     margin-top: 125px
 
@@ -30,7 +32,7 @@
 .blog > .list,
 .blog-ko > .list,
 .blog-en > .list,
-.blog-ja > .list,  
+.blog-ja > .list,
     > .item
         display: block
         width: 95%
@@ -73,10 +75,10 @@
         letter-spacing: 1px
         margin: 3px 1px
         text-decoration: none
-        display: inline-block        
-        
-        
-        
+        display: inline-block
+
+
+
     // maybe we can't nest html5 elements
     // can you help me?
     aside
@@ -138,10 +140,10 @@
         letter-spacing: 1px
         margin: 3px 1px
         text-decoration: none
-        display: inline-block        
-        
-        
-        
+        display: inline-block
+
+
+
     // maybe we can't nest html5 elements
     // can you help me?
     aside
@@ -157,12 +159,12 @@
         transition: all ease-in-out .2s
 
     .item:hover .url aside
-        color: $alpha        
-        
+        color: $alpha
+
 .blog > .list > .item > .url,
 .blog-ko > .list > .item > .url,
 .blog-en > .list > .item > .url,
-.blog-ja > .list > .item > .url,    
+.blog-ja > .list > .item > .url,
 .projects > .list > .item > .url
     > .title
         display: inline
