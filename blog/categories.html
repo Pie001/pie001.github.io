@@ -13,15 +13,15 @@ title: Categories
         <h2 class="category-head">{{ category_name }}</h2>
         <a name="{{ category_name | slugize }}"></a>
         {% for post in site.categories[category_name] %}
-<!-- -->
-        {% assign currentdate = post.date | date: "%Y" %}
+          <!-- -->
+          {% assign currentdate = post.date | date: "%Y" %}
           {% if currentdate != date %}
           {% unless forloop.first %}</ul>{% endunless %}
             <h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>
             <ul class="related-posts">
           {% assign date = currentdate %}
           {% endif %}
-<!-- -->
+          <!-- -->
           <article class="archive-item">
           <aside class="date" style="float: right; color: $gama; font-size: smaller; font-weight: 300;"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%Y-%m-%d" }}</time></aside>
           <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
