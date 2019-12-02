@@ -19,13 +19,13 @@ title: Blog
 				{% if currentdate != date %}
 				{% unless forloop.first %}</ul>{% endunless %}
 					<h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>
-					<ul class="related-posts">
+					<!--<ul class="related-posts">-->
 				{% assign date = currentdate %}
 				{% endif %}
 				<!-- -->
 	        {% include blog-post.html %}
 				<!-- -->
-				{% if forloop.last %}</ul>{% endif %}
+				{% if forloop.last %}<!--</ul>-->{% endif %}
 				<!-- -->
 	    {% endfor %}
 
@@ -39,13 +39,13 @@ title: Blog
 			{% if currentdate != date %}
 			{% unless forloop.first %}</ul>{% endunless %}
 				<h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>
-				<ul class="related-posts">
+				<!--<ul class="related-posts">-->
 			{% assign date = currentdate %}
 			{% endif %}
 			<!-- -->
 			{% include blog-post.html %}
 			<!-- -->
-			{% if forloop.last %}</ul>{% endif %}
+			{% if forloop.last %}<!--</ul>-->{% endif %}
 			<!-- -->
 		{% endfor %}
 	{% endif %}
