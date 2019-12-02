@@ -2,6 +2,7 @@
     <ul class="list">
         {% if page.title == "Home" %}
             <li class="item">
+                <a class="link" href="{{ site.url }}/about">ABOUT</a>
                 <a class="link" href="{{ site.url }}/blog">BLOG</a>
                 <!--<a class="link" href="{{ site.url }}/blog-ja">BLOG(ja)</a>-->
                 <a class="link" href="{{ site.url }}/categories">ARCHIVE</a>
@@ -12,6 +13,7 @@
         {% if page.title != "Home" %}
             <li class="item">
                 <a class="link" href="{{ site.url }}/">Home</a>
+                <a class="link" href="{{ site.url }}/about">ABOUT</a>
                 <a class="link" href="{{ site.url }}/blog">Blog</a>
                 <!--<a class="link" href="{{ site.url }}/blog-ja">Blog(ja)</a>-->
                 <!--<a class="link" href="{{ site.url }}/code">Code</a>-->
