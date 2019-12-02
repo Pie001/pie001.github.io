@@ -1,0 +1,12 @@
+{% if page.title == "Home"
+   or page.title == "Blog"
+   or page.title == "Blog-ko"
+   or page.title == "Blog-en"
+   or page.title == "Blog-ja"
+   or page.title == "Projects"
+   or page.title == "Tags"
+%}{% assign showHeader = true %}{% endif %}
+
+{% include nav.html %}
+
+<!-- {{ site.name }} -->
