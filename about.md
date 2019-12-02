@@ -5,7 +5,7 @@ layout: page
 
 <img src="/assets/images/icon_big.png" width="200" height="200">
 
-처음에는 흥미로 개발을 시작했는데 지금은 생활이 된 여자 비전공 개발자 입니다.
+개발을 좋아하고 오랫동안 코드와 함께 하고 싶은 개발자입니다.
 
 <h2>Skills</h2>
 

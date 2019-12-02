@@ -1,0 +1,17 @@
+---
+layout: blog-page
+title: daily-note
+---
+<section class="list">
+    {% for post in site.posts %}
+        {% if post.category == "daily-note" %}
+  				{% assign currentdate = post.date | date: "%Y" %}
+  				{% if currentdate != date %}
+  				{% unless forloop.first %}</ul>{% endunless %}
+  					<h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>
+  				{% assign date = currentdate %}
+  				{% endif %}
+             {% include default-post.html %}
+        {% endif %}
+    {% endfor %}
+</section>
