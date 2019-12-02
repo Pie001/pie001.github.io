@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% include adsense.html %}
+{% include analytics-google.html %}
+
+{{content}}
+
+{% if page.title != "Home" %}
+	{% include search.html %}
+{% endif %}
+
+{% include footer.html %}
