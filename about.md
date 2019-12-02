@@ -5,8 +5,7 @@ layout: page
 
 <img src="/assets/images/icon_big.png" width="200" height="200">
 
-여자&비전공&학원출신. IT업계에서 구른지 10년↑
-
+처음에는 흥미로 개발을 시작했는데 지금은 생활이 된 여자 비전공 개발자 입니다.
 
 <h2>Skills</h2>
 
@@ -36,7 +35,7 @@ layout: page
 	<li><a href="https://www.acmicpc.net/user/pie" target="_blank">Baekjoon OJ</a></li>
 </ul>
 
-<!-- <h2>Projects</h2> 
+<!-- <h2>Projects</h2>
 <ul>
 <li></li>
 </ul>
