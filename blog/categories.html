@@ -3,9 +3,6 @@ layout: blog-page
 permalink: /categories/
 title: Categories
 ---
-<section class="list">
-    <h1 class="title">Archive</h1>
-
     <div id="archives">
     {% for category in site.categories %}
       <div class="archive-group">
@@ -15,13 +12,23 @@ title: Categories
         <h2 class="category-head">{{ category_name }}</h2>
         <a name="{{ category_name | slugize }}"></a>
         {% for post in site.categories[category_name] %}
-        <article class="archive-item">
-        <aside class="date" style="float: right; color: $gama; font-size: smaller; font-weight: 300;"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%Y-%m-%d" }}</time></aside>
-        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-        </article>
+<!-- -->
+        {% assign currentdate = post.date | date: "%Y" %}
+          {% if currentdate != date %}
+          {% unless forloop.first %}</ul>{% endunless %}
+            <h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>
+            <ul class="related-posts">
+          {% assign date = currentdate %}
+          {% endif %}
+          {% include post-list-item.html post=post format="%d %b" %}
+          {% if forloop.last %}</ul>{% endif %}
+<!-- -->
+          <article class="archive-item">
+          <aside class="date" style="float: right; color: $gama; font-size: smaller; font-weight: 300;"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%Y-%m-%d" }}</time></aside>
+          <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+          </article>
+
         {% endfor %}
       </div>
     {% endfor %}
     </div>
-
-</section>
