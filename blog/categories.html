@@ -1,40 +1,27 @@
 ---
-layout: page
+layout: blog-page
 permalink: /categories/
 title: Categories
 ---
 <section class="list">
-    <h1 class="title">Tags</h1>
+    <h1 class="title">Archive</h1>
 
-    {% assign tags_list = site.tags %}
-
-    {% if tags_list.first[0] == null %}
-        {% for tag in tags_list %}
-            <a class="item" href="../tags#{{ tag | slugify }}">{{ tag }}</a>
+    <div id="archives">
+    {% for category in site.categories %}
+      <div class="archive-group">
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+        <div id="#{{ category_name | slugize }}"></div>
+        <p></p>
+        <h2 class="category-head">{{ category_name }}</h2>
+        <a name="{{ category_name | slugize }}"></a>
+        {% for post in site.categories[category_name] %}
+        <article class="archive-item">
+        <aside class="date" style="float: right; color: $gama; font-size: smaller; font-weight: 300;"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%Y-%m-%d" }}</time></aside>
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+        </article>
         {% endfor %}
-    {% else %}
-        {% for tag in tags_list %}
-            <a class="item" href="../tags#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
-        {% endfor %}
-    {% endif %}
-
-    {% assign tags_list = nil %}
-</section>
-
-<div id="archives">
-{% for category in site.categories %}
-  <div class="archive-group">
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <p></p>
-    <h2 class="category-head">{{ category_name }}</h2>
-    <a name="{{ category_name | slugize }}"></a>
-    {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-    <aside class="date" style="float: right; color: $gama; font-size: smaller; font-weight: 300;"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%Y-%m-%d" }}</time></aside>
-    <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
+      </div>
     {% endfor %}
-  </div>
-{% endfor %}
-</div>
+    </div>
+
+</section>
