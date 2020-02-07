@@ -28,7 +28,7 @@ layout: page
 
 <ul>
 	<li><a href="https://pie001.github.io/" target="_blank">Pie's Tech Note</a> - Tech Blog (Korean)</li>
-	<li><a href="https://blog.pie001.com/" target="_blank">IT業界のすみっこ暮らし</a> - Tech Blog (Japanese)</li>
+	<li><a href="https://pie001.hatenablog.com/" target="_blank">IT業界のすみっこ暮らし</a> - Tech Blog (Japanese)</li>
 	<li><a href="https://www.linkedin.com/in/piepark/" target="_blank">Linkedin</a></li>
 	<li><a href="https://github.com/Pie001" target="_blank">GitHub</a></li>
 	<li><a href="https://www.hackerrank.com/pie001" target="_blank">HackerRank</a></li>
