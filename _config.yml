@@ -41,10 +41,10 @@ analytics_google: 'UA-119919865-1'
 disqus:  mydisqus
 
 # if you don't have any of social below, comment the line
-linkedin: piepark
+#linkedin: piepark
 github: pie001
 #facebook: myfacebook
-twitter: pie001_dev
+#twitter: pie001_dev
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
