@@ -5,7 +5,10 @@ layout: page
 
 <img src="/assets/images/icon_big.png" width="200" height="200">
 
+
+<!--
 개발을 좋아하고 오랫동안 코드와 함께 하고 싶은 개발자입니다.
+
 
 <h2>Skills</h2>
 
@@ -34,7 +37,7 @@ layout: page
 	<li><a href="https://www.hackerrank.com/pie001" target="_blank">HackerRank</a></li>
 	<li><a href="https://www.acmicpc.net/user/pie" target="_blank">Baekjoon OJ</a></li>
 </ul>
-
+-->
 <!-- <h2>Projects</h2>
 <ul>
 <li></li>
