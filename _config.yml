@@ -101,6 +101,9 @@ show-author: true
 # do you want some animations?
 animation: true
 
+## add param
+future: true
+
 plugins:
   - jemoji
   - jekyll-mentions
